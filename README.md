@@ -51,4 +51,4 @@ Reported setup: performance mode, slight CPU underclock, GPU limited to **222 MH
 
 ## Credits
 
-Maintained by **Mr. Didi / Grinding Reborn**. Based on **GE-Proton11-7 ARM64** and FEX. Component notices and source references are included with the tool.
+Maintained by **mrdidit**. Based on **GE-Proton11-7 ARM64** and FEX. Component notices and source references are included with the tool.
