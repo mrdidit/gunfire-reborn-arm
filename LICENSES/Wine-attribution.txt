@@ -1,0 +1,16 @@
+Wine interface attribution
+
+Copyright (C) the Wine project
+Copyright 1999 Patrik Stridvall
+Copyright (C) 2021 Alexandre Julliard
+
+Interface material is licensed under LGPL-2.1-or-later. The complete GNU
+Lesser General Public License, version 2.1, is in Wine-LGPL-2.1.txt.
+
+Source: https://www.winehq.org/
+Source mirror: https://github.com/wine-mirror/wine
+Interface integration: https://github.com/FEX-Emu/FEX/tree/82510eb452b258959ef982be58a9c3c1bafc82a4/Source/Windows/include
+
+Wine runtime facilities are supplied by the separately installed
+compatibility tool. No additional restrictions on modification or reverse
+engineering for debugging such modifications are imposed by this package.

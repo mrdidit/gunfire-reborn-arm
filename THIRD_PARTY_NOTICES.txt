@@ -1,0 +1,88 @@
+THIRD-PARTY NOTICES
+
+The supplied replacement runtime contains FEX and third-party components.
+Their copyright and license terms are reproduced in LICENSES/. These notices
+apply independently of the license for the installer and documentation.
+
+FEX / FEXCore
+  Copyright (c) 2019 Ryan Houdek and contributors.
+  License: MIT. See LICENSES/FEX-MIT.txt.
+  Source: https://github.com/FEX-Emu/FEX
+
+fmt
+  Copyright (c) 2012 - present, Victor Zverovich and fmt contributors.
+  License: MIT. See LICENSES/fmt-MIT.txt.
+  Source: https://github.com/fmtlib/fmt
+
+xxHash library
+  Copyright (c) 2012-2021 Yann Collet.
+  License: BSD 2-Clause. See LICENSES/xxHash-BSD-2-Clause.txt.
+  Source: https://github.com/Cyan4973/xxHash
+
+ankerl::unordered_dense
+  Copyright (c) 2022 Martin Leitner-Ankerl.
+  License: MIT. See LICENSES/unordered_dense-MIT.txt.
+  Source: https://github.com/martinus/unordered_dense
+
+cpp-optparse
+  Copyright (c) 2010 Johannes Weißl.
+  License: MIT. See LICENSES/cpp-optparse-MIT.txt.
+  Source: https://github.com/Sonicadvance1/cpp-optparse
+
+Tiny-JSON
+  Copyright (c) 2018 Rafa Garcia.
+  License: MIT. See LICENSES/Tiny-JSON-MIT.txt.
+  Source: https://github.com/rafagafe/tiny-json
+
+rpmalloc
+  Redistribution terms: LICENSES/rpmalloc-license.txt.
+  Source: https://github.com/FEX-Emu/rpmalloc
+
+range-v3
+  Boost Software License 1.0 and included third-party terms.
+  See LICENSES/range-v3-licenses.txt for the complete notices.
+  Source: https://github.com/ericniebler/range-v3
+
+Cephes mathematical library
+  Copyright Stephen L. Moshier.
+  See LICENSES/Cephes-license.txt and LICENSES/Cephes-copyrights.txt
+  for upstream redistribution terms and retained copyright notices.
+  Source: https://www.netlib.org/cephes/
+  Integration: https://github.com/FEX-Emu/FEX/tree/82510eb452b258959ef982be58a9c3c1bafc82a4/External/cephes
+
+SoftFloat IEEE Floating-Point Arithmetic Package, Release 3e
+  By John R. Hauser. Copyright The Regents of the University of California.
+  License: BSD 3-Clause. See LICENSES/SoftFloat-3e-BSD-3-Clause.txt
+  for the complete notices retained from the component source files.
+  Source: https://www.jhauser.us/arithmetic/SoftFloat.html
+
+musl-derived runtime routines
+  Copyright 2005-2020 Rich Felker, et al.
+  Copyright (c) 2018, Arm Limited.
+  License: MIT. See LICENSES/musl-MIT.txt.
+  Source: https://musl.libc.org/
+
+LLVM runtimes and compiler support
+  Includes libc++, libc++abi, libunwind, and compiler-rt.
+  Apache License 2.0 with LLVM exceptions and retained legacy notices.
+  See LICENSES/LLVM-license.txt, LICENSES/LLVM-libcxx-LICENSE.txt,
+  LICENSES/LLVM-libcxxabi-LICENSE.txt, LICENSES/LLVM-libunwind-LICENSE.txt,
+  and LICENSES/LLVM-compiler-rt-LICENSE.txt.
+  Source: https://github.com/llvm/llvm-project/tree/llvmorg-22.1.8
+
+MinGW-w64
+  Copyright the MinGW-w64 project and the respective component authors.
+  See LICENSES/MinGW-w64-runtime.txt for the runtime's component notices.
+  Source: https://www.mingw-w64.org/
+
+Wine interfaces and runtime dependency
+  This runtime uses Wine interfaces and dynamically loads Wine facilities
+  supplied by the separately installed compatibility tool. Wine is covered
+  by the GNU Lesser General Public License, version 2.1 or later.
+  See LICENSES/Wine-attribution.txt and LICENSES/Wine-LGPL-2.1.txt.
+  Source: https://www.winehq.org/
+
+GE-Proton
+  The separately downloaded compatibility tool has its own component licenses.
+  Retain the notices supplied in that distribution.
+  Source: https://github.com/GloriousEggroll/proton-ge-custom

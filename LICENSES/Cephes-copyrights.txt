@@ -1,0 +1,30 @@
+Cephes mathematical library — retained source copyright notices
+
+External/cephes/src/128bit/atanll.c
+Copyright 1984, 1990 by Stephen L. Moshier
+
+External/cephes/src/128bit/exp2ll.c
+Copyright 1984, 1991 by Stephen L. Moshier
+
+External/cephes/src/128bit/floorll.c
+Copyright 1984, 1987, 1988, 1992 by Stephen L. Moshier
+
+External/cephes/src/128bit/log2ll.c
+Copyright 1984, 1991 by Stephen L. Moshier
+
+External/cephes/src/128bit/mconf.h
+Copyright 1984, 1987, 1989, 1995 by Stephen L. Moshier
+
+External/cephes/src/128bit/mtherr.c
+Copyright 1984, 1987 by Stephen L. Moshier
+
+External/cephes/src/128bit/polevll.c
+Copyright 1984, 1987, 1988, 1992 by Stephen L. Moshier
+
+External/cephes/src/128bit/sinll.c
+Copyright 1985, 1990 by Stephen L. Moshier
+
+External/cephes/src/128bit/tanll.c
+Copyright 1984, 1990 by Stephen L. Moshier
+
+See Cephes-license.txt for the upstream redistribution terms.
