@@ -19,7 +19,7 @@ Requires Steam, Python 3 and GNU coreutils. Run without `sudo`. For a custom Ste
 
 ## Status
 
-**14 October 2026:** First map completed and transition to the second map confirmed. No crash reported through that point. Testing continues on the second map; a full run is not confirmed yet.
+**14 October 2026:** First and second maps completed, with no crash reported so far. A full run is not confirmed yet.
 
 Reported test setup:
 
