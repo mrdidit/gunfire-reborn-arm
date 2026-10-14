@@ -1,36 +1,54 @@
-# Gunfire Reborn ARM
+# GE-Proton11-7-Reborn1
 
-Test build for Gunfire Reborn on ARM64 Linux. Tested on KPFE with Armada.
+Gunfire Reborn test build for ARM64 Linux. Tested on KPFE with Armada.
 
-## Installation
+## Install
 
-1. Download and extract the package from [Releases](https://github.com/mrdidit/gunfire-reborn-arm/releases).
-2. Close Steam. Open a terminal in the extracted folder and run:
+Requires ARM64 Linux, Steam and **Steam Linux Runtime 4.0 - Arm64** (App ID `4185400`, available in Steam's Library under Tools).
 
-   ```sh
-   python3 install.py
-   ```
+1. Download [GE-Proton11-7-Reborn1-arm64.tar.gz](https://github.com/mrdidit/gunfire-reborn-arm/releases/download/Reborn1/GE-Proton11-7-Reborn1-arm64.tar.gz) and extract it into Steam's `compatibilitytools.d` folder. On Armada this is normally `~/.local/share/Steam/compatibilitytools.d/`. Create the folder if it is missing.
+2. Restart Steam. Open Gunfire Reborn → Properties → Compatibility and select **GE-Proton11-7-Reborn1 (ARM64)**.
+3. Use the launch options below for your device.
 
-3. Start Steam. Open Gunfire Reborn → Properties → Compatibility and select **GE ARM - Gunfire**.
+This is the complete Proton tool. No separate installer or manual Python setup is needed. Keep the original Proton tool installed if you want to switch back.
 
-The installer uses a matching GE-Proton11-7 ARM64 install if available. Otherwise it downloads the official ARM64 build, checks it, and sets up a separate tool. Existing Proton installs and game settings stay as they are.
+## FEX settings
 
-Requires Steam, Python 3 and GNU coreutils. Run without `sudo`. For a custom Steam location, use `python3 install.py --steam-dir "/path/to/Steam"`.
+The tested FEX configuration is **Fast with TSO enabled**:
 
-## Status
+| Setting | Value |
+| --- | --- |
+| TSO | On |
+| Vector TSO | Off |
+| Memcpy/Set TSO | Off |
+| Half-barrier TSO | Off |
+| Reduced x87 precision | On |
+| Multiblock | On |
 
-**14 October 2026:** First and second maps completed, with no crash reported so far. A full run is not confirmed yet.
+## Steam launch options
 
-Reported test setup:
+**Steam Frame:** use this entire line. It applies all six FEX settings directly, so no preset menu is needed:
 
-- KPFE with Armada, using the custom **GE ARM - Gunfire** tool.
-- **FEX Custom: based on Fast, with TSO enabled.** Use this configuration to match the successful test.
-- Performance mode, with a slight CPU underclock.
-- GPU clock limited to **222 MHz**.
-- **720p**, medium/high graphics settings, steady **72 FPS**.
+```sh
+PROTON_NO_FSYNC=1 PROTON_LOG=0 FEX_TSOENABLED=1 FEX_VECTORTSOENABLED=0 FEX_MEMCPYSETTSOENABLED=0 FEX_HALFBARRIERTSOENABLED=0 FEX_X87REDUCEDPRECISION=1 FEX_MULTIBLOCK=1 %command%
+```
 
-To revert, select the original compatibility tool in Steam.
+**Armada:** set Gunfire's per-game FEX preset to **Custom**, with the toggles shown above, then use:
+
+```sh
+PROTON_NO_FSYNC=1 /usr/libexec/armada/armada-game-launch %command%
+```
+
+The Armada launcher applies the per-game FEX settings. Diagnostic logging is off by default.
+
+## Test status
+
+**14 October 2026, KPFE with Armada:** First and second maps completed, with no crash reported so far. A full run is not confirmed yet.
+
+**Steam Frame:** Launch reported with the bundled defaults and no launch options. Sustained gameplay is not confirmed yet.
+
+Reported setup: performance mode, slight CPU underclock, GPU limited to **222 MHz**, **720p**, medium/high graphics, steady **72 FPS**. These are test settings, not required clock limits.
 
 ## Credits
 
-Based on [GE-Proton11-7 ARM64](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-7) and FEX. Component licenses are in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) and `LICENSES/`.
+Maintained by **Mr. Didi / Grinding Reborn**. Based on **GE-Proton11-7 ARM64** and FEX. Component notices and source references are included with the tool.
