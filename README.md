@@ -19,7 +19,15 @@ Requires Steam, Python 3 and GNU coreutils. Run without `sudo`. For a custom Ste
 
 ## Status
 
-The game loads and gameplay is working in testing. Full runs and map changes are not confirmed yet. Tested with FEX Fast.
+**14 October 2026:** First map completed and transition to the second map confirmed. No crash reported through that point. Testing continues on the second map; a full run is not confirmed yet.
+
+Reported test setup:
+
+- KPFE with Armada, using the custom **GE ARM - Gunfire** tool.
+- **FEX Custom: based on Fast, with TSO enabled.** Use this configuration to match the successful test.
+- Performance mode, with a slight CPU underclock.
+- GPU clock limited to **222 MHz**.
+- **720p**, medium/high graphics settings, steady **72 FPS**.
 
 To revert, select the original compatibility tool in Steam.
 
